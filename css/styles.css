@@ -6,6 +6,7 @@
   --background-color: #ffffff;
   --background-dop-color: #f4f4fd;
   --borders: #e7e9fc;
+  --customers: #afb1b8;
 }
 /* Reset styles */
 h1,
@@ -41,6 +42,7 @@ p {
 .border-line {
   height: 72px;
   border-bottom: 1px solid var(--borders);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .adress-list {
   font-style: normal;
@@ -162,12 +164,15 @@ body {
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-  max-width: 1158px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  background: linear-gradient(
-  rgba(46, 47, 66, 0.7) 
-),
+  background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7))
+,
 url(../images/people-office.jpg);
 }
 
@@ -213,6 +218,15 @@ url(../images/people-office.jpg);
   cursor: pointer;
 }
 /* SECTION ОСОБЛИВОСТІ */
+.pecu-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: var(--background-dop-color);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
 img {
   display: block;
 }
@@ -309,7 +323,8 @@ img {
 }
 
 .team-content {
-  padding: 32px 16px;
+
+  padding: 32px 0;
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -325,11 +340,18 @@ img {
   margin-bottom: 8px;
 }
 .socials{
-
   display: flex;
   justify-content: center;
   gap: 24px;
   list-style: none;
+}
+.social-items{
+  width: 40px;
+  height: 40px;
+}
+.social-icons{
+  width: 16px;
+  height: 16px;
 }
 .socials-link{
   display: flex;
@@ -344,6 +366,43 @@ img {
 .socials-link:hover,
 .socials-link:focus{
  background-color: var(--accent-color);
+}
+.cust-content{
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.1;
+  color: var(--tittle-text-color);
+  margin-bottom: 72px;
+}
+.cust-clients{
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+.cust-list{
+  width: calc((100% - 120px) / 6);
+  height: 88px;
+}
+.cust-link{
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--customers);
+}
+.cust-link:hover{
+  border-color: #404bbf;
+  color: #404bbf;
+}
+.cust-link:focus{
+  border-color: #404bbf;
+  color: #404bbf;
+}
+.cust-svg{
+  fill: currentColor;
 }
 
 /* FOOTER */
@@ -460,3 +519,4 @@ img {
   border: 1px solid var(--borders);
   border-top: none;
 }
+
