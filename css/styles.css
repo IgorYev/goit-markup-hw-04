@@ -157,23 +157,19 @@ body {
    
 }
 .hero {
-  /* padding-bottom: 188px;
-  padding-top: 188px; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 1440px;
   padding: 188px 0;
   background-color: var(--tittle-text-color);
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7))
-,
-url(../images/people-office.jpg);
+  background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+  url(../images/people-office.jpg);
 }
 
 .title {
