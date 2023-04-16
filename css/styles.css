@@ -287,7 +287,7 @@ img {
   background: var(--background-dop-color);
 }
 .back {
-  padding: 0;
+  padding: 0px;
   gap: 24px;
   display: flex;
 }
@@ -314,6 +314,8 @@ img {
 }
 
 .team-content {
+  text-align: center;
+  justify-content: center;
   
   padding: 32px 0;
   border-radius: 0px 0px 4px 4px;
@@ -331,12 +333,13 @@ img {
   margin-bottom: 8px;
 }
 .socials{
+  width: 232px;
   display: flex;
   justify-content: center;
   gap: 24px;
   list-style: none;
 }
-.social-items{
+.social-item{
   width: 40px;
   height: 40px;
 }
@@ -346,6 +349,7 @@ img {
   height: 16px;
 }
 .socials-link{
+  
   display: flex;
   width: 40px;
   height: 40px;
@@ -376,7 +380,7 @@ img {
   gap: 24px;
 }
 .customers-list{
-  width: calc((100% - 120px)/6);
+  width: calc((100% - 120px) / 6);
   height: 88px;
   
 }
